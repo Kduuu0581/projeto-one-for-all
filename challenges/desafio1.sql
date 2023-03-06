@@ -4,7 +4,7 @@ USE SpotifyClone;
 CREATE TABLE plano(
     plano_id INT AUTO_INCREMENT PRIMARY KEY,
     plano_tipo VARCHAR(100) NOT NULL,
-    valor_plano DECIMAL(5,2) NOT NULL,
+    valor_plano DECIMAL(5,2) NOT NULL
 );
 INSERT INTO plano (plano_tipo, valor_plano)
 VALUES
@@ -21,7 +21,7 @@ CREATE TABLE usuario(
 );
 INSERT INTO SpotifyClone.usuario (nome, idade, plano_id)
 VALUES
-    ('Barbara Liskov', 82, 1),
+  ('Barbara Liskov', 82, 1),
   ('Robert Cecil Martin', 58, 1),
   ('Ada Lovelace', 37, 4),
   ('Martin Fowler', 46, 4),
@@ -33,7 +33,7 @@ VALUES
   ('Jorge Amado', 58, 3);
 CREATE TABLE artista(
     artista_id INT PRIMARY KEY AUTO_INCREMENT,
-    artista_nome VARCHAR(100) NOT NULL,
+    artista_nome VARCHAR(100) NOT NULL
 );
 INSERT INTO artista (artista_nome)
 VALUES
@@ -125,3 +125,4 @@ VALUES
   (8, 4),
   (9, 9),
   (10, 3);
+  
