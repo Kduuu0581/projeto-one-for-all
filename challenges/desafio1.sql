@@ -20,7 +20,7 @@ CREATE TABLE usuario(
     data_assinatura DATE NOT NULL,
      FOREIGN KEY (plano_id) REFERENCES plano (plano_id)
 );
-INSERT INTO SpotifyClone.usuario (nome, idade, plano_id, data_assinatura)
+INSERT INTO usuario (nome, idade, plano_id, data_assinatura)
 VALUES
   ('Barbara Liskov', 82, 1, "2019-10-20"),
   ('Robert Cecil Martin', 58, 1, "2017-01-06"),
